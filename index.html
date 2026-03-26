@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- ============================================
+         SM CONSULTING - Site Web
+         Fichier: index.html
+         ============================================ -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SM Consulting - Expertise en démarches administratives. Création d'entreprise, immigration, carte grise, démarches sociales.">
+    <meta name="keywords" content="consulting, démarches administratives, création entreprise, immigration, carte grise">
+    <meta name="author" content="SM Consulting">
+    
+    <title>SM Consulting | Expertise en Démarches Administratives</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fichier CSS Local -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon (optionnel - à ajouter si vous avez un logo) -->
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+</head>
+<body>
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <nav id="main-navigation">
+        <div class="container">
+            <!-- Logo -->
+            <div id="nav-brand">
+                <div id="nav-logo">SM</div>
+                <span id="nav-title">SM Consulting</span>
+            </div>
+            
+            <!-- Menu Desktop -->
+            <div id="nav-menu-desktop">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">À Propos</a>
+                <a href="#process" class="nav-link">Processus</a>
+                <a href="#contact" id="nav-cta">Contact</a>
+            </div>
+
+            <!-- Bouton Menu Mobile -->
+            <button id="nav-toggle" aria-label="Ouvrir le menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Menu Mobile -->
+        <div id="nav-menu-mobile">
+            <div class="mobile-menu-content">
+                <a href="#services" class="mobile-link">Services</a>
+                <a href="#about" class="mobile-link">À Propos</a>
+                <a href="#process" class="mobile-link">Processus</a>
+                <a href="#contact" class="mobile-link mobile-cta">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         SECTION HERO (Accueil)
+         ============================================ -->
+    <header id="hero-section">
+        <!-- Arrière-plan -->
+        <div id="hero-background">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Bureau professionnel SM Consulting">
+            <div id="hero-overlay"></div>
+        </div>
+
+        <!-- Contenu -->
+        <div id="hero-content">
+            <div class="reveal active">
+                <span id="hero-tag">EXPERTISE ADMINISTRATIVE</span>
+                <h1 id="hero-heading">
+                    Simplifiez vos <br>
+                    <span class="text-gradient">démarches administratives</span>
+                </h1>
+                <p id="hero-description">
+                    SM Consulting vous accompagne dans la gestion complexe de vos formalités. 
+                    Gain de temps, sérénité et expertise garantie pour tous vos projets.
+                </p>
+                <div id="hero-buttons">
+                    <a href="#contact" id="btn-primary">
+                        <span>Demander un devis</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" id="btn-secondary">Nos services</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indicateur de scroll -->
+        <div id="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- ============================================
+         SECTION STATISTIQUES
+         ============================================ -->
+    <section id="stats-section">
+        <div class="container">
+            <div id="stats-grid">
+                <article class="stat-item reveal">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Années d'expérience</div>
+                </article>
+                <article class="stat-item reveal">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Dossiers traités</div>
+                </article>
+                <article class="stat-item reveal">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Taux de réussite</div>
+                </article>
+                <article class="stat-item reveal">
+                    <div class="stat-number">24h</div>
+                    <div class="stat-label">Délai de réponse</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION SERVICES
+         ============================================ -->
+    <section id="services-section">
+        <div class="container">
+            <header class="section-header reveal">
+                <h2>Nos Domaines d'Expertise</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Une gamme complète de services pour vous libérer des contraintes administratives.
+                </p>
+            </header>
+
+            <div id="services-grid">
+                <!-- Service 1: Création d'entreprise -->
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Création d'Entreprise</h3>
+                    <p>Constitution de dossiers, choix du statut juridique, immatriculation et obtention des numéros SIRET/SIREN.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> SAS, SARL, Auto-entrepreneur</li>
+                        <li><i class="fas fa-check"></i> Rédaction des statuts</li>
+                    </ul>
+                </article>
+
+                <!-- Service 2: Immigration -->
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>Immigration & Visas</h3>
+                    <p>Accompagnement dans les demandes de titres de séjour, naturalisation, et regroupement familial.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Carte de séjour</li>
+                        <li><i class="fas fa-check"></i> Visa travail/étudiant</li>
+                    </ul>
+                </article>
+
+                <!-- Service 3: Démarches sociales -->
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Démarches Sociales</h3>
+                    <p>Gestion des dossiers CAF, RSA, APL, et toutes les aides sociales. Suivi des dossiers de retraite.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Aides au logement</li>
+                        <li><i class="fas fa-check"></i> Pensions de retraite</li>
+                    </ul>
+                </article>
+
+                <!-- Service 4: Carte grise -->
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Carte Grise & Permis</h3>
+                    <p>Immatriculation de véhicules, changement d'adresse, duplicata, et assistance pour le permis de conduire.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Changement de titulaire</li>
+                        <li><i class="fas fa-check"></i> Déclaration de cession</li>
+                    </ul>
+                </article>
+
+                <!-- Service 5: Successions -->
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Successions & Notaires</h3>
+                    <p>Assistance dans les démarches de succession, déclaration fiscale, et contact avec les notaires.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Acte de décès</li>
+                        <li><i class="fas fa-check"></i> Déclaration de succession</li>
+                    </ul>
+                </article>
+
+                <!-- Service 6: Immobilier -->
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Formalités Immobilières</h3>
+                    <p>Accompagnement dans l'achat/vente immobilière, diagnostics obligatoires, et raccordements aux réseaux.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Compromis de vente</li>
+                        <li><i class="fas fa-check"></i> Acte authentique</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION PROCESSUS (Méthodologie)
+         ============================================ -->
+    <section id="process-section">
+        <div class="container">
+            <header class="section-header reveal">
+                <h2>Notre Méthodologie</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Un processus simple et transparent pour vous accompagner efficacement.
+                </p>
+            </header>
+
+            <div id="process-container">
+                <div id="process-line"></div>
+                <div id="process-steps">
+                    <article class="process-step reveal">
+                        <div class="step-circle">01</div>
+                        <h3>Consultation</h3>
+                        <p>Analyse gratuite de votre situation et définition de vos besoins spécifiques.</p>
+                    </article>
+                    <article class="process-step reveal">
+                        <div class="step-circle">02</div>
+                        <h3>Constitution</h3>
+                        <p>Rassemblement et vérification méticuleuse de tous les documents requis.</p>
+                    </article>
+                    <article class="process-step reveal">
+                        <div class="step-circle">03</div>
+                        <h3>Dépôt</h3>
+                        <p>Transmission officielle de votre dossier aux administrations compétentes.</p>
+                    </article>
+                    <article class="process-step reveal">
+                        <div class="step-circle">04</div>
+                        <h3>Suivi</h3>
+                        <p>Relances et mise à jour constante jusqu'à l'obtention définitive.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION À PROPOS
+         ============================================ -->
+    <section id="about-section">
+        <div id="about-decoration"></div>
+        <div class="container">
+            <div id="about-grid">
+                <div class="reveal">
+                    <span class="section-tag">À Propos de Nous</span>
+                    <h2>Votre allié dans la <br>complexité administrative</h2>
+                    <p class="about-text-primary">
+                        Fondée sur l'expertise et la rigueur, SM Consulting est née de la volonté de simplifier la vie des particuliers et des entreprises face à la jungle administrative.
+                    </p>
+                    <p class="about-text-secondary">
+                        Notre équipe d'experts maîtrise les subtilités des différentes administrations et reste constamment à jour sur les évolutions législatives pour vous garantir un service irréprochable.
+                    </p>
+                    
+                    <div id="about-features">
+                        <div class="feature-item">
+                            <div class="feature-title">Disponibilité</div>
+                            <div class="feature-desc">7j/7 pour vos urgences</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-title">Confidentialité</div>
+                            <div class="feature-desc">Données 100% sécurisées</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reveal" id="about-image-wrapper">
+                    <div id="about-image-bg"></div>
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1632&q=80" 
+                         alt="Équipe SM Consulting au travail" 
+                         id="about-image">
+                    
+                    <!-- Carte témoignage -->
+                    <div id="testimonial-card">
+                        <div class="testimonial-header">
+                            <i class="fas fa-quote-left"></i>
+                            <div>
+                                <div class="testimonial-author">Marie D.</div>
+                                <div class="testimonial-role">Cliente depuis 2022</div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Un service impeccable qui m'a sauvé des heures de files d'attente !"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION CONTACT
+         ============================================ -->
+    <section id="contact-section">
+        <div class="container">
+            <div id="contact-grid">
+                <!-- Informations de contact -->
+                <div class="reveal">
+                    <span class="section-tag">Contactez-nous</span>
+                    <h2>Commençons votre projet</h2>
+                    <p id="contact-intro">
+                        Remplissez le formulaire ci-contre ou contactez-nous directement. Nous vous répondrons sous 24 heures ouvrées.
+                    </p>
+
+                    <div id="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Adresse</h4>
+                                <p>123 Avenue des Champs-Élysées<br>75008 Paris, France</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Téléphone</h4>
+                                <p>+33 1 23 45 67 89</p>
+                                <p class="info-note">Lun-Ven, 9h-18h</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>contact@smconsulting.fr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire -->
+                <div class="reveal" id="form-container">
+                    <form id="contact-form" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="prenom">Prénom</label>
+                                <input type="text" id="prenom" name="prenom" required placeholder="Jean">
+                            </div>
+                            <div class="form-group">
+                                <label for="nom">Nom</label>
+                                <input type="text" id="nom" name="nom" required placeholder="Dupont">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="jean.dupont@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="demarche">Type de démarche</label>
+                            <select id="demarche" name="demarche" required>
+                                <option value="" disabled selected>Choisissez une option</option>
+                                <option value="entreprise">Création d'entreprise</option>
+                                <option value="immigration">Immigration / Visa</option>
+                                <option value="carte-grise">Carte grise / Permis</option>
+                                <option value="sociales">Démarches sociales (CAF, etc.)</option>
+                                <option value="successions">Successions</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Décrivez votre besoin..."></textarea>
+                        </div>
+
+                        <button type="submit" id="form-submit">
+                            Envoyer ma demande
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER (Pied de page)
+         ============================================ -->
+    <footer id="main-footer">
+        <div class="container">
+            <div id="footer-grid">
+                <!-- Marque -->
+                <div id="footer-brand">
+                    <div id="footer-logo-container">
+                        <div id="footer-logo">SM</div>
+                        <span id="footer-title">SM Consulting</span>
+                    </div>
+                    <p id="footer-description">
+                        Votre partenaire de confiance pour toutes vos démarches administratives. Simplifiez votre vie avec notre expertise.
+                    </p>
+                </div>
+                
+                <!-- Liens rapides -->
+                <nav class="footer-nav">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#process">Processus</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Liens légaux -->
+                <nav class="footer-nav">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Mentions Légales</a></li>
+                        <li><a href="#">Politique de Confidentialité</a></li>
+                        <li><a href="#">CGV</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- Bas de footer -->
+            <div id="footer-bottom">
+                <p>&copy; 2026 SM Consulting. Tous droits réservés.</p>
+                <div id="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         MODAL DE CONFIRMATION
+         ============================================ -->
+    <div id="modal-overlay">
+        <div id="modal-content">
+            <div id="modal-icon">
+                <i class="fas fa-check"></i>
+            </div>
+            <h3>Message Envoyé !</h3>
+            <p>Nous avons bien reçu votre demande. Notre équipe vous contactera dans les plus brefs délais.</p>
+            <button type="button" id="modal-close">Fermer</button>
+        </div>
+    </div>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script>
+        // Sélection des éléments
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenuMobile = document.getElementById('nav-menu-mobile');
+        const navbar = document.getElementById('main-navigation');
+        const revealElements = document.querySelectorAll('.reveal');
+        const contactForm = document.getElementById('contact-form');
+        const modalOverlay = document.getElementById('modal-overlay');
+        const modalClose = document.getElementById('modal-close');
+
+        // Toggle menu mobile
+        navToggle.addEventListener('click', () => {
+            navMenuMobile.classList.toggle('active');
+            const icon = navToggle.querySelector('i');
+            if (navMenuMobile.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Fermer menu mobile au clic sur un lien
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenuMobile.classList.remove('active');
+                navToggle.querySelector('i').classList.remove('fa-times');
+                navToggle.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // Effet scroll navbar
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Animation reveal au scroll
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            const elementVisible = 100;
+            
+            revealElements.forEach((reveal) => {
+                const elementTop = reveal.getBoundingClientRect().top;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveal.classList.add('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Déclencher une fois au chargement
+
+        // Gestion du formulaire
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            modalOverlay.classList.add('active');
+            contactForm.reset();
+        });
+
+        // Fermer modal
+        modalClose.addEventListener('click', () => {
+            modalOverlay.classList.remove('active');
+        });
+
+        // Fermer modal au clic sur l'overlay
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) {
+                modalOverlay.classList.remove('active');
+            }
+        });
+
+        // Fermer modal avec la touche Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+                modalOverlay.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
